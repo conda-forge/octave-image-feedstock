@@ -1,6 +1,6 @@
 context:
   name: image
-  version: "2.18.2"
+  version: "2.20.0"
 
 package:
   name: octave-${{ name }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/octave/Octave%20Forge%20Packages/Individual%20Package%20Releases/image-${{ version }}.tar.gz
-  sha256: a5863c1392d977ea4f370cc5547e04b1763c2b77d7b3a1f2cf6cd8c1e5e49919
+  sha256: 5f8d97ed7f7d18ce854a8174bbf819e9e3a703bcd1cb2ca8b1ad15b9ef329522
   target_directory: ${{ name }}
 
 build:
-  number: 1
+  number: 0
   skip:
     - if: win or osx
       then: true
